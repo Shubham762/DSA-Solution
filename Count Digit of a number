@@ -1,0 +1,16 @@
+let number=-1234;
+let count=0;
+function countDigit(value){
+    //for handling negative number case convert negative to positive
+      value=Math.abs(value);
+      
+    if(value===0) return 1;
+    while(value>0){
+       let y=Math.floor(value/10);
+       count++;
+       value=y;
+    }
+      return count
+}
+let y=countDigit(number);
+console.log("Number of digit is ",y);
