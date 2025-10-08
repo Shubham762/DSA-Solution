@@ -1,0 +1,16 @@
+Palindrome Number Proble eg 121 as reverse of it also same number
+
+let number=121;
+let count=0;
+var isPalindrome = function(x) {
+    let num=0;
+    let final=Math.abs(x);
+     while(final>0){
+        let y=final%10;
+         num=num*10+y;
+         final=Math.floor(final/10);
+     }
+    return num===x;
+};
+let bool=isPalindrome(number);
+console.log("Number of digit is ",bool);
