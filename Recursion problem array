@@ -1,0 +1,12 @@
+
+
+// sum of odd numbers using recursion
+let arr=[5,3,2,10,1,13];
+ function sumTotal(n){
+     let isodd= (arr[n]%2) !=0;
+     if(n===0) return isodd?arr[0]:0;
+     return (isodd? arr[n] : 0 ) + sumTotal(n-1)
+ }
+ 
+ let value=sumTotal(arr.length-1);
+ console.log(value)
